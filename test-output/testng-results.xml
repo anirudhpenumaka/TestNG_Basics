@@ -1,32 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-10T21:08:32 IST" name="Default suite" finished-at="2025-12-10T21:08:37 IST" duration-ms="5421">
+  <suite started-at="2025-12-12T06:45:11 IST" name="Suite" finished-at="2025-12-12T06:45:18 IST" duration-ms="7191">
     <groups>
     </groups>
-    <test started-at="2025-12-10T21:08:32 IST" name="Default test" finished-at="2025-12-10T21:08:37 IST" duration-ms="5421">
-      <class name="TestNG_Assertions.Assertions">
-        <test-method signature="Openapp()[pri:1, instance:TestNG_Assertions.Assertions@4a1e3ac1]" started-at="2025-12-10T21:08:32 IST" name="Openapp" finished-at="2025-12-10T21:08:37 IST" duration-ms="5147" status="PASS">
+    <test started-at="2025-12-12T06:45:11 IST" name="edgeTest" finished-at="2025-12-12T06:45:17 IST" duration-ms="6163">
+      <class name="ParallelTesting.paralleltesting">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:ParallelTesting.paralleltesting@686449f9]" started-at="2025-12-12T06:45:11 IST" name="setup" finished-at="2025-12-12T06:45:17 IST" duration-ms="5902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Openapp -->
-        <test-method signature="findlogo()[pri:2, instance:TestNG_Assertions.Assertions@4a1e3ac1]" started-at="2025-12-10T21:08:37 IST" name="findlogo" finished-at="2025-12-10T21:08:37 IST" duration-ms="64" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findlogo -->
-        <test-method signature="testlogo()[pri:3, instance:TestNG_Assertions.Assertions@4a1e3ac1]" started-at="2025-12-10T21:08:37 IST" name="testlogo" finished-at="2025-12-10T21:08:37 IST" duration-ms="26" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- setup -->
+        <test-method signature="testLogo()[pri:1, instance:ParallelTesting.paralleltesting@686449f9]" started-at="2025-12-12T06:45:17 IST" name="testLogo" finished-at="2025-12-12T06:45:17 IST" duration-ms="27" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [amazzzoneee] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='orangehrm-login-logo']//img[@alt='orangehrm-logo']"}
+  (Session info: MicrosoftEdge=143.0.3650.75)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f38e41a29bb624b4a2ab4f290d1a7c84, findElement {using=xpath, value=//div[@class='orangehrm-login-logo']//img[@alt='orangehrm-logo']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 12168, ms:edgeOptions: {debuggerAddress: localhost:64461}, msedge: {msedgedriverVersion: 143.0.3650.75 (4d325bd07b04..., userDataDir: C:\Users\NIGHTB~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64461/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f38e41a29bb624b4a2ab4f290d1a7c84]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [amazzzoneee] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at TestNG_Assertions.Assertions.testlogo(Assertions.java:44)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='orangehrm-login-logo']//img[@alt='orangehrm-logo']"}
+  (Session info: MicrosoftEdge=143.0.3650.75)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f38e41a29bb624b4a2ab4f290d1a7c84, findElement {using=xpath, value=//div[@class='orangehrm-login-logo']//img[@alt='orangehrm-logo']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 12168, ms:edgeOptions: {debuggerAddress: localhost:64461}, msedge: {msedgedriverVersion: 143.0.3650.75 (4d325bd07b04..., userDataDir: C:\Users\NIGHTB~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64461/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f38e41a29bb624b4a2ab4f290d1a7c84
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at ParallelTesting.paralleltesting.testLogo(paralleltesting.java:36)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -41,29 +70,122 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testlogo -->
-        <test-method signature="close()[pri:4, instance:TestNG_Assertions.Assertions@4a1e3ac1]" started-at="2025-12-10T21:08:37 IST" name="close" finished-at="2025-12-10T21:08:37 IST" duration-ms="144" status="PASS">
+        </test-method> <!-- testLogo -->
+        <test-method signature="testTitle()[pri:2, instance:ParallelTesting.paralleltesting@686449f9]" started-at="2025-12-12T06:45:17 IST" name="testTitle" finished-at="2025-12-12T06:45:17 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- TestNG_Assertions.Assertions -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testTitle -->
+        <test-method signature="testURL()[pri:3, instance:ParallelTesting.paralleltesting@686449f9]" started-at="2025-12-12T06:45:17 IST" name="testURL" finished-at="2025-12-12T06:45:17 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelTesting.paralleltesting@686449f9]" started-at="2025-12-12T06:45:17 IST" name="tearDown" finished-at="2025-12-12T06:45:17 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ParallelTesting.paralleltesting -->
+    </test> <!-- edgeTest -->
+    <test started-at="2025-12-12T06:45:11 IST" name="chromeTest" finished-at="2025-12-12T06:45:18 IST" duration-ms="7191">
+      <class name="ParallelTesting.paralleltesting">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:ParallelTesting.paralleltesting@7ec3394b]" started-at="2025-12-12T06:45:11 IST" name="setup" finished-at="2025-12-12T06:45:18 IST" duration-ms="7037" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogo()[pri:1, instance:ParallelTesting.paralleltesting@7ec3394b]" started-at="2025-12-12T06:45:18 IST" name="testLogo" finished-at="2025-12-12T06:45:18 IST" duration-ms="16" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='orangehrm-login-logo']//img[@alt='orangehrm-logo']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d2e76ac5f37c76222fb5bc2f5fc2006, findElement {using=xpath, value=//div[@class='orangehrm-login-logo']//img[@alt='orangehrm-logo']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\NIGHTB~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64460}, goog:processID: 27456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64460/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d2e76ac5f37c76222fb5bc2f5fc2006]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='orangehrm-login-logo']//img[@alt='orangehrm-logo']"}
+  (Session info: chrome=143.0.7499.40)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d2e76ac5f37c76222fb5bc2f5fc2006, findElement {using=xpath, value=//div[@class='orangehrm-login-logo']//img[@alt='orangehrm-logo']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.40, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\NIGHTB~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64460}, goog:processID: 27456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64460/devtoo..., se:cdpVersion: 143.0.7499.40, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d2e76ac5f37c76222fb5bc2f5fc2006
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at ParallelTesting.paralleltesting.testLogo(paralleltesting.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogo -->
+        <test-method signature="testTitle()[pri:2, instance:ParallelTesting.paralleltesting@7ec3394b]" started-at="2025-12-12T06:45:18 IST" name="testTitle" finished-at="2025-12-12T06:45:18 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method signature="testURL()[pri:3, instance:ParallelTesting.paralleltesting@7ec3394b]" started-at="2025-12-12T06:45:18 IST" name="testURL" finished-at="2025-12-12T06:45:18 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParallelTesting.paralleltesting@7ec3394b]" started-at="2025-12-12T06:45:18 IST" name="tearDown" finished-at="2025-12-12T06:45:18 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ParallelTesting.paralleltesting -->
+    </test> <!-- chromeTest -->
+  </suite> <!-- Suite -->
 </testng-results>
